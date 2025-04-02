@@ -17,7 +17,6 @@
       - boto3
       - botocore
       executable: pip3.9
-  tasks:
   - name: create ec2 instances
     amazon.aws.ec2_instance:
       name: "{{ item }}"
